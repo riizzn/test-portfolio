@@ -48,6 +48,13 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Cs";
+  src: url("/fonts/cs.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* Add more font-face declarations for other variants as needed */
 
@@ -59,11 +66,12 @@
   --color-pearl: #ebe9ea;
   --color-lavender: #caceee;
   --color-mauve: #9b97ad;
-  
+  --color-charcoal: #111111;
 
   /* Add Amiamie to your font family stack */
   --font-amiamie: "Amiamie", sans-serif;
   --font-amiamie-round: "Amiamie-Round", sans-serif;
+  --font-cs: "Cs";
 
   --animate-marquee: marquee 40s infinite linear;
   @keyframes marquee {
@@ -103,3 +111,4 @@ body {
 @utility contact-text-responsive {
   @apply text-[42px] sm:text-[52px] md:text-[62px] lg:text-[100px];
 }
+
