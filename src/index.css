@@ -86,7 +86,7 @@
 
 body {
   background: #111111;
-  color: white;
+  color: var(--color-pearl);
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: var(--font-amiamie);
@@ -101,7 +101,7 @@ body {
 }
 
 @utility value-text-responsive {
-  @apply text-2xl md:text-[26px] lg:text-[32px];
+  @apply   text-lg md:text-[26px] lg:text-[32px];
 }
 
 @utility marquee-text-responsive {
