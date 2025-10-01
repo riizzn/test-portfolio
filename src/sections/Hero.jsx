@@ -46,7 +46,7 @@ const Hero = () => {
               404 no errors found
             </p>
             <div className="px-10">
-              <h2 className="flex flex-col flex-wrap  uppercase  banner-text-responsive gap-12 sm:gap-16 md:block">
+              <h2  style={{ textShadow: "1px 1px 10px rgba(0,0,0,0.2)" }} className="flex flex-col flex-wrap  uppercase  banner-text-responsive gap-12 sm:gap-16 md:block">
                 Rezan
               </h2>
             </div>
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
         <div className="relative px-10 ">
           <div className="absolute inset-x-0 border-t-2" />
-          <div className="py-12 sm:py-16 text-end">
+          <div className="py-12 sm:py-16 text-end "  style={{ textShadow: "1px 1px 10px rgba(0,0,0,0.2)" }}>
             <AnimatedText
               text={aboutText}
               className="uppercase font-light value-text-responsive "
