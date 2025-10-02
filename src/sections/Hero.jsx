@@ -1,67 +1,24 @@
-import React, { useRef } from "react";
-import AnimatedText from "../components/AnimatedText";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+
 import { Planet } from "../components/Hole";
 import { Canvas } from "@react-three/fiber";
 import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
+import AnimatedHeader from "../components/AnimatedHeader";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 855 });
-  const contextRef = useRef(null);
-  const headerRef = useRef(null);
-  const aboutText = `I help growing brand and startups gain an
-   unfair advantage through premium
-    result driven webs/apps`;
+    const aboutText = `I help growing brand and startups gain an
+     unfair advantage through premium
+      result driven webs/apps`;
+    const   bigText=`rezan`
+    const smallText='404 no errors found'
 
-  useGSAP(() => {
-    const tl = gsap.timeline();
-    tl.from(contextRef.current, {
-      y: "50vh",
-      duration: 1,
-      ease: "circ.out",
-    });
-    tl.from(
-      headerRef.current,
-      {
-        opacity: 0,
-        y: "200",
-        duration: 1,
-        ease: "circ.out",
-      },
-      "<+0.2"
-    );
-  }, []);
+
 
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen">
-      <div ref={contextRef}>
-        <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
-          <div
-            ref={headerRef}
-            className="flex flex-col justify-center gap-10 pt-16 sm:gap-16  "
-          >
-            <p className="text-xs font-light tracking-wide uppercase px-10">
-              404 no errors found
-            </p>
-            <div className="px-10">
-              <h2  style={{ textShadow: "1px 1px 10px rgba(0,0,0,0.2)" }} className="flex flex-col flex-wrap  uppercase  banner-text-responsive gap-12 sm:gap-16 md:block">
-                Rezan
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div className="relative px-10 ">
-          <div className="absolute inset-x-0 border-t-2" />
-          <div className="py-12 sm:py-16 text-end "  style={{ textShadow: "1px 1px 10px rgba(0,0,0,0.2)" }}>
-            <AnimatedText
-              text={aboutText}
-              className="uppercase font-light value-text-responsive "
-            />
-          </div>
-        </div>
-      </div>
+      <AnimatedHeader aboutText={aboutText} bigText={bigText} smalltext={smallText}/>
+    
       <figure
         className="absolute inset-0 -z-50"
         style={{ width: "100vw", height: "100vh" }}
