@@ -154,14 +154,16 @@ const Works = () => {
       </div>
       <div
         ref={previewRef}
-        className="fixed top-0 left-0 z-50 overflow-hidden border-8 border-black pointer-events-none w-[500px] md:block hidden opacity-0"
+        className="fixed -top-2/6 left-0 z-50 overflow-hidden  pointer-events-none w-[500px] md:block hidden opacity-0"
       >
         {currentIndex !== null && (
+          <div className="overflow-hidden border-8 border-black">
           <img
             src={projects[currentIndex].image}
             alt="preview"
             className="object-cover w-full h-full"
           />
+          </div>
         )}
       </div>
     </section>
