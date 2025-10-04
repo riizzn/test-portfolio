@@ -97,15 +97,15 @@ body {
 }
 
 @utility banner-text-responsive {
-  @apply text-[68px] sm:text-[118px] md:text-[126px] lg:text-[152px] leading-9 sm:leading-16 lg:leading-20;
+  @apply text-[68px] sm:text-[100px] md:text-[120px] lg:text-[125px] leading-9 sm:leading-16 lg:leading-20;
 }
 
 @utility value-text-responsive {
-  @apply   text-lg md:text-[26px] lg:text-[32px];
+  @apply   text-lg md:text-[20px] lg:text-[25px];
 }
 
 @utility marquee-text-responsive {
-  @apply text-[28px] sm:text-[36px] lg:text-[42px];
+  @apply text-[28px] sm:text-[30px] lg:text-[35px];
 }
 
 @utility contact-text-responsive {
