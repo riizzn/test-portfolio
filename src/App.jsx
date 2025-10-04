@@ -27,7 +27,7 @@ const App = () => {
       {/* Loading Screen */}
       {!isReady && (
         <div className="fixed inset-0 flex flex-col items-center justify-center bg-black text-white z-[9999] transition-opacity">
-          <h2 className="mb-4 text-lg font-medium">Loading...</h2>
+          <h2 className=" text-lg font-medium animate-pulse">Loading...</h2>
           <ProgressBar
             value={progress}
             showValue
