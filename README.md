@@ -1,16 +1,38 @@
-# React + Vite
+# Mockfolio 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern mock portfolio website built with **React**, featuring smooth scrolling, animations, and 3D visuals.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo  
+🔗 [View Site](https://mockfolio-phi.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack  
+- ⚛️ **React** – Frontend framework  
+- 🌀 **Lenis Scroll** – Smooth scrolling  
+- 🎬 **GSAP** – Advanced animations  
+- 🌌 **Three.js** – 3D graphics and effects  
+- 🧩 **Iconify** – Icon library  
+- 💨 **Tailwind CSS** – Utility-first styling  
 
-## React Compiler
+## ✨ Features  
+- Smooth and fluid scrolling experience  
+- Interactive animations using GSAP  
+- 3D elements powered by Three.js  
+- Responsive and clean UI  
+- Lightweight and fast performance  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧰 Installation  
 
-## Expanding the ESLint configuration
+```bash
+# Clone the repository
+git clone https://github.com/riizzn/test-portfolio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Navigate to the project directory
+cd test-portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+
